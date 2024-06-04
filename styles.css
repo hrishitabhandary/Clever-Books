@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 50rem;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 50rem;
+    margin-top: 2rem;
+}
+
+.testimonials {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    max-width: 40rem;
+}
+
+.features,
+.benefits,
+.expertise,
+.kpi {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.features h2,
+.benefits h2,
+.expertise h2,
+.kpi h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.features p,
+.benefits p,
+.expertise p,
+.kpi p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 40rem;
+}
+
+.features img,
+.benefits img,
+.expertise img,
+.kpi img {
+    width: 100%;
+    max-width: 40rem;
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cta button:hover {
+    background-color: #e8e8e8;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        max-width: 30rem;
+    }
+
+    .hero img {
+        width: 40rem;
+        margin-top: 0;
+    }
+
+    .testimonials {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .testimonials h2 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial {
+        flex: 1;
+        margin: 0 2rem;
+    }
+
+    .testimonial img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .features,
+    .benefits,
+    .expertise,
+    .kpi {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .features h2,
+    .benefits h2,
+    .expertise h2,
+    .kpi h2 {
+        font-size: 2.5rem;
+    }
+
+    .features p,
+    .benefits p,
+    .expertise p,
+    .kpi p {
+        font-size: 1.5rem;
+        max-width: 30rem;
+    }
+
+    .features img,
+    .benefits img,
+    .expertise img,
+    .kpi img {
+        width: 30rem;
+    }
+}
